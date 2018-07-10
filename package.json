@@ -1,0 +1,16 @@
+{
+  "name": "otpinput",
+  "version": "1.0.0",
+  "description": "otp input with seperator and placeolder",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8100 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "http-server": "^0.11.1"
+  }
+}

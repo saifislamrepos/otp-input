@@ -1,0 +1,72 @@
+.otp-wrapper {
+    display: inline-block
+}
+
+.otp-label {
+	margin-bottom: 5px;
+}
+.otp-input {
+    padding: 7px 0px 11px;
+    border: 1px solid #a3a3a3;
+    text-align: center;
+    display: table;
+}
+
+.otp-input .sub-input {
+    width: 35px;
+    display: table-cell;
+    position: relative;
+    height: 20px;
+    vertical-align: middle
+}
+
+.otp-input .sub-input input {
+	outline: 0;
+	background: none;
+	width: 100%;
+    text-decoration: none;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: sub;
+    font-family: "Rubik-Medium"
+}
+
+.otp-input .sub-input input::-webkit-input-placeholder {
+    background: radial-gradient(ellipse at center, #cecece 21%,rgba(255,255,255,0) 21%);
+    background-position: 50% 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color: #cecece
+}
+
+.otp-input .sub-input input::-moz-placeholder {
+    background: radial-gradient(ellipse at center, #cecece 21%,rgba(255,255,255,0) 21%);
+    background-position: 50% 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color: #cecece
+}
+
+.otp-input .sub-input input:focus {
+    background: none
+}
+
+.otp-input .sub-input:after {
+    content: '';
+    border-right: 2px solid #a6a6a6;
+    bottom: 0;
+    height: 70%;
+    right: 0;
+    position: absolute
+}
+
+.otp-input .sub-input:last-child:after {
+    display: none
+}
+.otp-value {
+	margin-top: 5px;
+}
+.error {
+	color:red;
+}

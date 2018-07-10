@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app="otpapp">
+	<head>
+	  <meta charset="utf-8">
+	  <title>OTP Input</title>
+	  <link rel="stylesheet" href="app.css">
+	  <script src="angular.min.js"></script>
+	  <script src="app.js"></script>
+	</head>
+	<body ng-controller="otpcontroller">
+		<label>
+			<div class = "otp-label">Enter OTP</div>
+			<div class="otp-input" ng-otpinput ng-otplen = "7" otpvalue = "otpvalue" error = "otperror.isError" ng-disablepaste ="false">
+			</div>
+		</label>
+		<span class = "error" ng-show = "otperror.isError">{{otperror.errorMessage}}</span>
+		<div class = "otp-value">OTP value  : {{otpvalue}}</div>
+		<button ng-click = "testotperror()">Show Error</button>
+	</body>
+</html>
