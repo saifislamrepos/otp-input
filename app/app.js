@@ -61,7 +61,14 @@ otpapp.directive('ngOtpinput', ['$compile', '$timeout', '$window', '$rootScope',
 					if (eval(attrs.ngDisablepaste)) {
 						return;
 					}
-					var data = event.clipboardData.getData("text/plain");
+					var data;
+					if (typeof event.clipboardData != "undefined") {
+						data = event.clipboardData.getData("text/plain");
+					} else if (typeof event.view.clipboardData != "undefined") {
+						data = event.view.clipboardData.getData("text");
+					} else { 
+						return;
+					}
 					var inputvalues = data.split('');
 					for (var i in scope.otparray) {
 						scope.otparray[i].value = inputvalues[i] || '';

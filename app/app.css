@@ -39,6 +39,13 @@
     background-repeat: no-repeat;
     color: #cecece
 }
+.otp-input .sub-input input:-ms-input-placeholder {
+    background: radial-gradient(ellipse at center, #cecece 21%,rgba(255,255,255,0) 21%);
+    background-position: 50% 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color: #cecece
+}
 
 .otp-input .sub-input input::-moz-placeholder {
     background: radial-gradient(ellipse at center, #cecece 21%,rgba(255,255,255,0) 21%);
