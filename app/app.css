@@ -7,7 +7,6 @@
 }
 .otp-input {
     padding: 7px 0px 11px;
-    border: 1px solid #a3a3a3;
     text-align: center;
     display: table;
 }
@@ -60,17 +59,15 @@
 }
 
 .otp-input .sub-input:after {
-    content: '';
-    border-right: 2px solid #a6a6a6;
-    bottom: 0;
-    height: 70%;
-    right: 0;
-    position: absolute
+	content: '';
+    border-bottom: 2px solid #a6a6a6;
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 6px;
 }
 
-.otp-input .sub-input:last-child:after {
-    display: none
-}
 .otp-value {
 	margin-top: 5px;
 }
